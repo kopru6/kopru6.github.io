@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on serd4r</title>
+    <link>https://serd4r.github.io/categories/hugo/</link>
+    <description>Recent content in Hugo on serd4r</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>serd4r</copyright>
+    <lastBuildDate>Mon, 25 Jan 2021 09:52:17 +0300</lastBuildDate><atom:link href="https://serd4r.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Statik Sitemizi Github&#39;da Yayınlıyoruz</title>
+      <link>https://serd4r.github.io/posts/statik-sitemizi-github-da-yayinliyoruz/</link>
+      <pubDate>Mon, 25 Jan 2021 09:52:17 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/statik-sitemizi-github-da-yayinliyoruz/</guid>
+      <description>Hugo ile statik site oluşturmuştuk. Şimdi sitemizi github üzerinde nasıl host ederiz onu açıklayacağım.
+config.toml Github statik site kaynak kodlarını tanımıyor o yüzden dosyalarımızı derlememiz gerekiyor.</description>
+    </item>
+    
+    <item>
+      <title>GoHugo ile Statik Site Yaratma</title>
+      <link>https://serd4r.github.io/posts/gohugo-ile-statik-site-yaratma/</link>
+      <pubDate>Tue, 19 Jan 2021 22:03:03 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/gohugo-ile-statik-site-yaratma/</guid>
+      <description>Öncelikle GitHub üzerinde statik bir site oluşturmakla ilgili türkçe kaynakların oldukça kıt ve yetersiz olduğu konusunda sizi uyarıyorum.Bunlarla vaktinizi harcamayın ve yabancı kaynaklardan yararlanın.</description>
+    </item>
+    
+  </channel>
+</rss>

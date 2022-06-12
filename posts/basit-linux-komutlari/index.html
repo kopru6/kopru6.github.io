@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Basit Linux Komutlari | serd4r</title>
+  <meta name="description" content="Artık daha az konuşuyor ve daha az uyuyorum...">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="google-site-verification" content="i_zSz8eu1EqIsZOm_6DZwJ4LNTXg3v_g-PZiwx1gJxI" />
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Basit Linux Komutlari" />
+<meta property="og:description" content="Önceki Dizine Geri Dön Uzun bir dizin yoluna girdiniz ve oradan da farklı bir dizine derken birden önceki dizin yoluna gitmeniz gerektiğini farkettiniz." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://serd4r.github.io/posts/basit-linux-komutlari/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-17T19:25:37+03:00" />
+<meta property="article:modified_time" content="2021-07-17T19:25:37+03:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Basit Linux Komutlari"/>
+<meta name="twitter:description" content="Önceki Dizine Geri Dön Uzun bir dizin yoluna girdiniz ve oradan da farklı bir dizine derken birden önceki dizin yoluna gitmeniz gerektiğini farkettiniz."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://serd4r.github.io/css/style-dark.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://serd4r.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">[anasayfa]</a></li>
+         
+        <li><a href="/posts">[arşiv]</a></li>
+         
+        <li><a href="/categories">[kategori]</a></li>
+         
+        <li><a href="/tags">[etiket]</a></li>
+         
+        <li><a href="/about">[hakkımda]</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://serd4r.github.io/posts/bisikletimi-nasil-yukselttim-triban100/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://serd4r.github.io/posts/phishing-via-sql-injection/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Önceki</span>
+      <span id="i-next" class="info" style="display:none;">Sonraki</span>
+      <span id="i-top" class="info" style="display:none;">En Üste</span>
+      <span id="i-share" class="info" style="display:none;">Paylaş</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&text=Basit%20Linux%20Komutlari">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&is_video=false&description=Basit%20Linux%20Komutlari">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Basit%20Linux%20Komutlari&body=Check out this article: https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&name=Basit%20Linux%20Komutlari&description=%c3%96nceki%20Dizine%20Geri%20D%c3%b6n%20Uzun%20bir%20dizin%20yoluna%20girdiniz%20ve%20oradan%20da%20farkl%c4%b1%20bir%20dizine%20derken%20birden%20%c3%b6nceki%20dizin%20yoluna%20gitmeniz%20gerekti%c4%9fini%20farkettiniz.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&t=Basit%20Linux%20Komutlari">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#önceki-dizine-geri-dön">Önceki Dizine Geri Dön</a></li>
+    <li><a href="#ana-dizine-geri-dön">Ana Dizine Geri Dön</a></li>
+    <li><a href="#tek-satırda-birden-çok-komut-çalıştır">Tek Satırda Birden Çok Komut Çalıştır</a></li>
+    <li><a href="#yalnızca-önceki-komut-başarılıysa-tek-satırda-birden-çok-komut-çalıştır">Yalnızca Önceki Komut Başarılıysa, Tek Satırda Birden Çok Komut Çalıştır</a></li>
+    <li><a href="#terminalde-kopyala-yapıştır">Terminalde Kopyala Yapıştır.</a></li>
+    <li><a href="#belirli-bir-metni-içeren-dosyalar-olup-olmadığını-bulun">Belirli Bir Metni İçeren Dosyalar Olup Olmadığını Bulun</a></li>
+    <li><a href="#herşeyi-terse-çevir">Herşeyi Terse Çevir</a></li>
+    <li><a href="#bilgisayardaki-bellek-miktarını-gör">Bilgisayardaki Bellek Miktarını Gör</a></li>
+    <li><a href="#gzip">gzip</a></li>
+    <li><a href="#ping">ping</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#uname---sistem-bilgilerini-görün">uname - Sistem Bilgilerini Görün</a></li>
+    <li><a href="#pwd---çalışılan-dizini-göster">pwd - Çalışılan Dizini Göster</a></li>
+    <li><a href="#mv--dosyayı-taşı">mv – Dosyayı Taşı</a></li>
+    <li><a href="#cp--dosyayı-kopyala">cp – Dosyayı Kopyala</a></li>
+    <li><a href="#rm---sil">rm - Sil</a></li>
+    <li><a href="#mkdir--dizin-oluşturmak-için">mkdir – Dizin Oluşturmak İçin</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Basit Linux Komutlari
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-07-17 19:25:37 &#43;0300 &#43;03" itemprop="datePublished">17/07/2021</time>
+          
+        </div>
+        
+        <div class="article-category">
+            <i class="fas fa-archive"></i>
+            
+            
+            <a class="category-link" href="/categories/linux">Linux</a>
+            
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/linux" rel="tag">linux</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p><img src="../../img/post/linux.jpg" alt=""></p>
+<h2 id="önceki-dizine-geri-dön">Önceki Dizine Geri Dön</h2>
+<p>Uzun bir dizin yoluna girdiniz ve oradan da farklı bir dizine derken birden önceki dizin yoluna gitmeniz gerektiğini farkettiniz.Bu komutu girin ve önceki dizine atlayın.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#8be9fd;font-style:italic">cd</span> -
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Bu sizi önceki dizine geri atacaktır böylelikle artık uzun dizin yolunu yazmak ya da kopyala yapıştır gibi yapmanıza gerek yok.
+<img src="../../img/post/l1.png" alt=""></p>
+<h2 id="ana-dizine-geri-dön">Ana Dizine Geri Dön</h2>
+<p>Oldukça açık&hellip;Linux ana dizinden uzakta bir yerdesiniz ve ana dizine gitmeniz gerekiyor.Terminale sadece şunları yazın.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#8be9fd;font-style:italic">cd</span> ~
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>ya da sadece cd yazın aynı işlevi görecektir.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#8be9fd;font-style:italic">cd</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="../../img/post/l2.png" alt=""></p>
+<h2 id="tek-satırda-birden-çok-komut-çalıştır">Tek Satırda Birden Çok Komut Çalıştır</h2>
+<p>Komut aralarına noktalı virgül koyarak sırayla birden fazla komut çalıştırabilir.Önceki komutları beklemeye gerek yok.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir new_dir; <span style="color:#8be9fd;font-style:italic">cd</span> new_dir; <span style="color:#8be9fd;font-style:italic">pwd</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="../../img/post/l3.png" alt=""></p>
+<h2 id="yalnızca-önceki-komut-başarılıysa-tek-satırda-birden-çok-komut-çalıştır">Yalnızca Önceki Komut Başarılıysa, Tek Satırda Birden Çok Komut Çalıştır</h2>
+<p>Önceki komutta, zamandan tasarruf etmek için birkaç komutu tek bir satırda çalıştırdık.Ama ya komutların başarısız olmadığından emin olmanız gerekiyorsa?</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ komut_1 <span style="color:#ff79c6">&amp;&amp;</span> komut_2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Buna örnek vermek gerekirse sistem güncellemelerinde kullanılan &ldquo;sudo apt update &amp;&amp; sudo apt upgrade&rdquo; komutudur.</p>
+<h2 id="terminalde-kopyala-yapıştır">Terminalde Kopyala Yapıştır.</h2>
+<p>▪ Kopyalanacak metni seçin ve yapıştırmak için sağ tıklayın (Putty ve diğer Windows SSH istemcilerinde çalışır)<br>
+▪ Kopyalanacak metni seçin ve yapıştırmak için orta tıklayın (faredeki kaydırma düğmesi)<br>
+▪ Ctrl+Shift+C for copy and Ctrl+Shift+V for paste</p>
+<h2 id="belirli-bir-metni-içeren-dosyalar-olup-olmadığını-bulun">Belirli Bir Metni İçeren Dosyalar Olup Olmadığını Bulun</h2>
+<p>Linux komut satırında aramanın ve bulmanın birden çok yolu vardır. Ancak, belirli bir metni içeren dosyalar olup olmadığını görmek istediğinizde şu komutu kullanabilirsiniz:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ grep -Pri aranan_kelime
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="../../img/post/l4.png" alt=""></p>
+<p>eğer sadece belli uzantıya sahip dosyaları aratacaksanız örneğin .txt uzantılı dosyalarda arama yapacaksanız;</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ grep aranan *.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>&ldquo;aranan&rdquo; kelimesini bütün txt uzantılı dosyalarda arayacaktır.</p>
+<h2 id="herşeyi-terse-çevir">Herşeyi Terse Çevir</h2>
+<p>Kendisine verilen her dizeyi tersine çevirir.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ rev
+</span></span><span style="display:flex;"><span>beni terse çevir
+</span></span><span style="display:flex;"><span>riveç esret ineb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="bilgisayardaki-bellek-miktarını-gör">Bilgisayardaki Bellek Miktarını Gör</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ free -h
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="../../img/post/l5.png" alt=""></p>
+<h2 id="gzip">gzip</h2>
+<p>gzip komutu dosyaları sıkıştırır. Varsayılan olarak, orijinal dosyayı kaldırır ve sizi sıkıştırılmış sürümle baş başa bırakır. Hem orjinal hem de sıkıştırılmış sürümü korumak için -k (sakla) seçeneğini kullanın.</p>
+<p><img src="../../img/post/l6.png" alt=""></p>
+<h2 id="ping">ping</h2>
+<p>Ping komutu, başka bir ağ aygıtıyla ağ bağlantınız olduğunu doğrulamanızı sağlar. Ağ sorunlarının giderilmesine yardımcı olmak için yaygın olarak kullanılır. Ping kullanmak için diğer aygıtın IP adresini veya makine adını girin.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ ping 192.168.4.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ping komutu, siz onu Ctrl+C ile durdurana kadar çalışacaktır.</p>
+<p><img src="../../img/post/l7.png" alt=""></p>
+<h4 id="burada-neler-oluyor">Burada neler oluyor:</h4>
+<p>▪ 192.168.4.1 IP adresindeki cihaz, ping taleplerimize yanıt veriyor ve 64 baytlık paketleri geri gönderiyor.</p>
+<p>▪ İnternet Kontrol Mesajlaşma Protokolü (ICMP) sıra numaralandırması, cevapsız yanıtları (bırakılan paketler) kontrol etmemizi sağlar.</p>
+<p>▪ TTL, bir paket için &ldquo;yaşama zamanı&quot;dır. Paket bir yönlendiriciden her geçtiğinde, (olması gereken) bir azaltılır. Sıfıra ulaşırsa paket atılır. Bunun amacı, ağ geri döngü sorunlarının ağa taşmasını önlemektir.</p>
+<p>▪ Zaman değeri, bilgisayarınızdan cihaza gidiş-dönüş yolculuğunun süresidir. Basitçe söylemek gerekirse, bu sefer ne kadar düşük olursa o kadar iyi.</p>
+<p>Ping&rsquo;in belirli sayıda çalışması için çalışması için -c(count) seçeneğini kullanın.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ ping -c <span style="color:#bd93f9">5</span> 192.168.4.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="uname---sistem-bilgilerini-görün">uname - Sistem Bilgilerini Görün</h2>
+<p>uname komutu ile üzerinde çalıştığınız bilgisayar ile ilgili bazı sistem bilgilerine ulaşabilirsiniz.</p>
+<p>▪ Her şeyi görmek için -a (all) seçeneğini kullanın.</p>
+<p>▪ Çekirdek türünü görmek için -s (kernel name) seçeneğini kullanın.</p>
+<p>▪ Çekirdek sürümünü görmek için -r (kernel release) seçeneğini kullanın.</p>
+<p>▪ Çekirdek sürümünü görmek için -v (kernel version) seçeneğini kullanın.</p>
+<p><img src="../../img/post/l8.png" alt=""></p>
+<h2 id="pwd---çalışılan-dizini-göster">pwd - Çalışılan Dizini Göster</h2>
+<p>Çalıştığınız dizini görmenin yolu pwd komutudur.Geçerli çalışma dizini yolunu görüntüler ve dizin değişiklikleri sıklıkla yapıldığında kullanışlıdır.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ <span style="color:#8be9fd;font-style:italic">pwd</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="mv--dosyayı-taşı">mv – Dosyayı Taşı</h2>
+<p>Bir dosyayı taşımak veya bir dosyayı yeniden adlandırmak için mv komutunu kullanırsınız.</p>
+<p>Burada dosya adı birinci.txt&rsquo;den ikinci.txt&rsquo;ye değiştirilir.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ mv birinci.txt ikinci.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="cp--dosyayı-kopyala">cp – Dosyayı Kopyala</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cp *.sql db/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Bulunulan dizindeki bütün sql uzantılı dosyaları db klasörüne kopyalar.</p>
+<h2 id="rm---sil">rm - Sil</h2>
+<p>Bu komut, bir dizindeki veya dizinin kendisindeki dosyaları kaldırmak için kullanılır. Bir dizin boş değilse kaldırılamaz.</p>
+<p>rm [dosyanın adı]<br>
+rm –r, bir dizindeki ve dizindeki tüm içeriği kaldırır.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ rm dosya1
+</span></span><span style="display:flex;"><span>$ rm -r proje
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="mkdir--dizin-oluşturmak-için">mkdir – Dizin Oluşturmak İçin</h2>
+<p>mkdir [dizin adı] &lsquo;proje&rsquo; türünde bir dizin oluşturmak istiyorsanız:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ mkdir proje
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Off çok uykum geldi 😴 aklıma geldikçe güncellerim. 💤💤💤</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">[anasayfa]</a></li>
+         
+          <li><a href="/posts">[arşiv]</a></li>
+         
+          <li><a href="/categories">[kategori]</a></li>
+         
+          <li><a href="/tags">[etiket]</a></li>
+         
+          <li><a href="/about">[hakkımda]</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#önceki-dizine-geri-dön">Önceki Dizine Geri Dön</a></li>
+    <li><a href="#ana-dizine-geri-dön">Ana Dizine Geri Dön</a></li>
+    <li><a href="#tek-satırda-birden-çok-komut-çalıştır">Tek Satırda Birden Çok Komut Çalıştır</a></li>
+    <li><a href="#yalnızca-önceki-komut-başarılıysa-tek-satırda-birden-çok-komut-çalıştır">Yalnızca Önceki Komut Başarılıysa, Tek Satırda Birden Çok Komut Çalıştır</a></li>
+    <li><a href="#terminalde-kopyala-yapıştır">Terminalde Kopyala Yapıştır.</a></li>
+    <li><a href="#belirli-bir-metni-içeren-dosyalar-olup-olmadığını-bulun">Belirli Bir Metni İçeren Dosyalar Olup Olmadığını Bulun</a></li>
+    <li><a href="#herşeyi-terse-çevir">Herşeyi Terse Çevir</a></li>
+    <li><a href="#bilgisayardaki-bellek-miktarını-gör">Bilgisayardaki Bellek Miktarını Gör</a></li>
+    <li><a href="#gzip">gzip</a></li>
+    <li><a href="#ping">ping</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#uname---sistem-bilgilerini-görün">uname - Sistem Bilgilerini Görün</a></li>
+    <li><a href="#pwd---çalışılan-dizini-göster">pwd - Çalışılan Dizini Göster</a></li>
+    <li><a href="#mv--dosyayı-taşı">mv – Dosyayı Taşı</a></li>
+    <li><a href="#cp--dosyayı-kopyala">cp – Dosyayı Kopyala</a></li>
+    <li><a href="#rm---sil">rm - Sil</a></li>
+    <li><a href="#mkdir--dizin-oluşturmak-için">mkdir – Dizin Oluşturmak İçin</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&text=Basit%20Linux%20Komutlari">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&is_video=false&description=Basit%20Linux%20Komutlari">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Basit%20Linux%20Komutlari&body=Check out this article: https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&title=Basit%20Linux%20Komutlari">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&name=Basit%20Linux%20Komutlari&description=%c3%96nceki%20Dizine%20Geri%20D%c3%b6n%20Uzun%20bir%20dizin%20yoluna%20girdiniz%20ve%20oradan%20da%20farkl%c4%b1%20bir%20dizine%20derken%20birden%20%c3%b6nceki%20dizin%20yoluna%20gitmeniz%20gerekti%c4%9fini%20farkettiniz.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fserd4r.github.io%2fposts%2fbasit-linux-komutlari%2f&t=Basit%20Linux%20Komutlari">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    copyright 👑 2022  serd4r 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">[anasayfa]</a></li>
+         
+        <li><a href="/posts">[arşiv]</a></li>
+         
+        <li><a href="/categories">[kategori]</a></li>
+         
+        <li><a href="/tags">[etiket]</a></li>
+         
+        <li><a href="/about">[hakkımda]</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>

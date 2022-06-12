@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>çözüm on serd4r</title>
+    <link>https://serd4r.github.io/tags/%C3%A7%C3%B6z%C3%BCm/</link>
+    <description>Recent content in çözüm on serd4r</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>serd4r</copyright>
+    <lastBuildDate>Sat, 28 Aug 2021 16:31:28 +0300</lastBuildDate><atom:link href="https://serd4r.github.io/tags/%C3%A7%C3%B6z%C3%BCm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro Linux Screen Tearing Cözümü</title>
+      <link>https://serd4r.github.io/posts/manjaro-screen-tearing-cozumu/</link>
+      <pubDate>Sat, 28 Aug 2021 16:31:28 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/manjaro-screen-tearing-cozumu/</guid>
+      <description>Manjaro Linux üzerinde Game Of Thrones izlerken ekranda garip bir şekilde yırtılma olduğunu farkettim.Makinemde Intel dahili ekran kartı var.
+inxi -G komutu ile ekran kartını görelim.</description>
+    </item>
+    
+  </channel>
+</rss>

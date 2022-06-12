@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>serd4r</title>
+    <link>https://serd4r.github.io/</link>
+    <description>Recent content on serd4r</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <copyright>serd4r</copyright>
+    <lastBuildDate>Sun, 05 Jun 2022 13:38:03 +0300</lastBuildDate><atom:link href="https://serd4r.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ama Kafamız Nasıl Güzel</title>
+      <link>https://serd4r.github.io/posts/ama-kafamiz-nasil-guzel/</link>
+      <pubDate>Sun, 05 Jun 2022 13:38:03 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/ama-kafamiz-nasil-guzel/</guid>
+      <description>Rastgele bir sokak röportajında &amp;ldquo;ama kafamız nasıl güzel biliyo musun?&amp;rdquo; sözleriyle meşhur olan Yunus Dönertaş&amp;lsquo;a ithafen çizdiğim bir karikafilm.Kendisi hakkında 15 temmuz 2021&amp;rsquo;de ailesi tarafından kayıp ilanında bulunulmuş, 8 ay sonra maalesef Tekirdağ TEMA piknik alanında bir çoban tarafından kemikleri bulunmuştur.</description>
+    </item>
+    
+    <item>
+      <title>Manjaro Linux Screen Tearing Cözümü</title>
+      <link>https://serd4r.github.io/posts/manjaro-screen-tearing-cozumu/</link>
+      <pubDate>Sat, 28 Aug 2021 16:31:28 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/manjaro-screen-tearing-cozumu/</guid>
+      <description>Manjaro Linux üzerinde Game Of Thrones izlerken ekranda garip bir şekilde yırtılma olduğunu farkettim.Makinemde Intel dahili ekran kartı var.
+inxi -G komutu ile ekran kartını görelim.</description>
+    </item>
+    
+    <item>
+      <title>Phishing via Sql Injection</title>
+      <link>https://serd4r.github.io/posts/phishing-via-sql-injection/</link>
+      <pubDate>Fri, 30 Jul 2021 00:07:29 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/phishing-via-sql-injection/</guid>
+      <description>Merhaba bu yazıda alışılmış SQLi saldırılarının (Login bilgilerini alıp siteyi uçurmak gibi&amp;hellip; ) aksine, SQLi barındıran sitenin URL adresini kendi lehimize göre nasıl manipule ederiz bu konu hakkında yazıcam.</description>
+    </item>
+    
+    <item>
+      <title>Basit Linux Komutlari</title>
+      <link>https://serd4r.github.io/posts/basit-linux-komutlari/</link>
+      <pubDate>Sat, 17 Jul 2021 19:25:37 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/basit-linux-komutlari/</guid>
+      <description>Önceki Dizine Geri Dön Uzun bir dizin yoluna girdiniz ve oradan da farklı bir dizine derken birden önceki dizin yoluna gitmeniz gerektiğini farkettiniz.</description>
+    </item>
+    
+    <item>
+      <title>Bisikletimi Nasıl Yükselttim : Triban100</title>
+      <link>https://serd4r.github.io/posts/bisikletimi-nasil-yukselttim-triban100/</link>
+      <pubDate>Thu, 15 Jul 2021 23:24:15 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/bisikletimi-nasil-yukselttim-triban100/</guid>
+      <description>27/03/2018 tarihinde, decathlon üzerinden yol bisikletleri hatta bisiklet hakkında hiçbir teknik bilgim olmadan en alt model trian100&amp;rsquo;ü aldım.O zamanki fiyatı 1.</description>
+    </item>
+    
+    <item>
+      <title>Joker : İzlemeyen Yanar!</title>
+      <link>https://serd4r.github.io/posts/joker-izlemeyen-yanar/</link>
+      <pubDate>Fri, 09 Jul 2021 22:05:55 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/joker-izlemeyen-yanar/</guid>
+      <description>Bir insan toplum tarafından nasıl delirir, ötekileştirilir, nasıl suça itilir hepsinin yanıtı bu filmde.
+Başrolde &amp;ldquo;Joaquin Phoenix&amp;rdquo; ile tam bir başyapıt, harika&amp;hellip;Öncelikle Joker &amp;lsquo;i görünce vurdulu kırdılı, patlamalı, uçmalı şeyler bekliyordum ama tam tersi.</description>
+    </item>
+    
+    <item>
+      <title>Karantina</title>
+      <link>https://serd4r.github.io/posts/karantina/</link>
+      <pubDate>Sat, 01 May 2021 12:40:01 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/karantina/</guid>
+      <description>10 günlük karantina sürecimi bu odada geçiriyorum.Şu anlık pek bişey yapamıyorum arada kendimi uzun uzun tavana bakarken buluyorum.PPSSPP&amp;rsquo;de 15 senelik playstation oyunlarını oynuyorum.</description>
+    </item>
+    
+    <item>
+      <title>Çıkış Bileti</title>
+      <link>https://serd4r.github.io/posts/cikis-bileti/</link>
+      <pubDate>Sun, 28 Mar 2021 14:08:15 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/cikis-bileti/</guid>
+      <description>Kasvetli kış ortasında
+Soğuk rüzgar inledi;
+Toprak demir kadar sert durdu,
+Su bir taş gibi;
+Kar yağmıştı, karda kar,
+Kar üstünde kar,</description>
+    </item>
+    
+    <item>
+      <title>Statik Sitemizi Github&#39;da Yayınlıyoruz</title>
+      <link>https://serd4r.github.io/posts/statik-sitemizi-github-da-yayinliyoruz/</link>
+      <pubDate>Mon, 25 Jan 2021 09:52:17 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/statik-sitemizi-github-da-yayinliyoruz/</guid>
+      <description>Hugo ile statik site oluşturmuştuk. Şimdi sitemizi github üzerinde nasıl host ederiz onu açıklayacağım.
+config.toml Github statik site kaynak kodlarını tanımıyor o yüzden dosyalarımızı derlememiz gerekiyor.</description>
+    </item>
+    
+    <item>
+      <title>Tor Browser Kurulumu</title>
+      <link>https://serd4r.github.io/posts/tor-browser-kurulumu/</link>
+      <pubDate>Sat, 23 Jan 2021 10:08:53 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/tor-browser-kurulumu/</guid>
+      <description>Kısıtlamalar : Kullandığınız linux distrosunun paket yöneticisinden ya da torproject.org üzerinden TOR Browser&amp;rsquo;ı indirmeyi deniyorsanız ve ağınızda herhangi bir VPN yapılandırmanız yok ise muhtemelen indiremeyeceksiniz.</description>
+    </item>
+    
+    <item>
+      <title>GoHugo ile Statik Site Yaratma</title>
+      <link>https://serd4r.github.io/posts/gohugo-ile-statik-site-yaratma/</link>
+      <pubDate>Tue, 19 Jan 2021 22:03:03 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/gohugo-ile-statik-site-yaratma/</guid>
+      <description>Öncelikle GitHub üzerinde statik bir site oluşturmakla ilgili türkçe kaynakların oldukça kıt ve yetersiz olduğu konusunda sizi uyarıyorum.Bunlarla vaktinizi harcamayın ve yabancı kaynaklardan yararlanın.</description>
+    </item>
+    
+    <item>
+      <title>İlk Post &amp; Site Hakkında</title>
+      <link>https://serd4r.github.io/posts/ilk-post-ve-site-hakkinda/</link>
+      <pubDate>Sun, 17 Jan 2021 23:27:58 +0300</pubDate>
+      
+      <guid>https://serd4r.github.io/posts/ilk-post-ve-site-hakkinda/</guid>
+      <description>Bu siteyi birkaç saat içerisinde GoHugo,GithubPages ve Manjaro üçlüsünün katkılarıyla yayına aldım.Github harika iş yapmış adamlar bedavaya harika bir barındırma hizmeti veriyor.</description>
+    </item>
+    
+    <item>
+      <title>Hakkımda</title>
+      <link>https://serd4r.github.io/about/</link>
+      <pubDate>Wed, 24 Aug 2016 17:51:42 +0000</pubDate>
+      
+      <guid>https://serd4r.github.io/about/</guid>
+      <description>bu site birkaç saat içerisinde 9 yaşında linux bir makinede; hugo, github, ve css ile yoğrularak oluşturuldu.herhangi bir veritabanına ihtiyaç duymuyor ve tamamen ücretsiz 🙂</description>
+    </item>
+    
+  </channel>
+</rss>
